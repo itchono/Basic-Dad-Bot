@@ -49,6 +49,8 @@ async def on_message(message : discord.Message):
                         
                         await message.channel.send("Hi {}, I'm Dad!".format(" ".join(arr[i+1:])))
                         # sends the dreaded message
+                    return
+                    # terminates the function
             except:
                 pass
 
