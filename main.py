@@ -30,6 +30,10 @@ TOKEN = os.environ.get('TOKEN')  # bot token; kept private
 
 client = commands.Bot(command_prefix="dad ")
 
+@client.command()
+async def info(ctx : commands.Context):
+    await ctx.send("I'm Dad Bot. I am currently have a {} percent chance of activating in channels where I am enabled.\nPing @itchono if anything goes wrong with me.")
+
 
 @client.event
 async def on_message(message : discord.Message):
